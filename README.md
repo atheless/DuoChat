@@ -12,3 +12,7 @@ Chatting app using Django Channels and WebSockets.
 
 
 
+### Video
+
+https://user-images.githubusercontent.com/86173165/235378137-8fd4387f-ae27-499b-827a-3210bb5185a6.mp4
+
