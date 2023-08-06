@@ -5,7 +5,7 @@
 Chatting app using Django Channels and WebSockets with encryption support via SSL.
 
 ### Installation (staging/testing)
-Change .env.staging, .env.staging.db, .env.staging.proxy-companion according to you needs.
+Change .env.staging, .env.staging.db, .env.staging.proxy-companion according to your needs.
 
 
     git clone https://github.com/atheless/DuoChat.git
@@ -15,8 +15,13 @@ Change .env.staging, .env.staging.db, .env.staging.proxy-companion according to 
     sudo docker-compose -f docker-compose.prod.yml exec web python manage.py collectstatic --no-input --clear
     docker compose up -f docker-compose.staging.yml down -v
 ### Installation (production)
-Change .env.prod, .env.prod.db, .env.prod.proxy-companion according to you needs.
+Change .env.prod, .env.prod.db, .env.prod.proxy-companion according to your needs.
+N.B: VIRTUAL_HOST,LETSENCRYPT_HOST should match your domain name not an IP adress.
 
+For SECRET_KEY 
+    
+    from django.core.management.utils import get_random_secret_key get_random_secret_key()
+    
     git clone https://github.com/atheless/DuoChat.git
     cd DuoChat
     docker compose up -f docker-compose.prod.yml up -d --build
