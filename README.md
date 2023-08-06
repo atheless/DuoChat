@@ -18,9 +18,9 @@ Change .env.staging, .env.staging.db, .env.staging.proxy-companion according to 
 Change .env.prod, .env.prod.db, .env.prod.proxy-companion according to your needs.
 N.B: VIRTUAL_HOST,LETSENCRYPT_HOST should match your domain name not an IP adress.
 
-For SECRET_KEY 
-    
-    from django.core.management.utils import get_random_secret_key get_random_secret_key()
+For SECRET_KEY use:
+from django.core.management.utils import get_random_secret_key get_random_secret_key()
+
     
     git clone https://github.com/atheless/DuoChat.git
     cd DuoChat
