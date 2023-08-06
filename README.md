@@ -35,7 +35,7 @@ Shutdown:
 
     docker compose up -f docker-compose.staging.yml down
 
-:warning: ### WARNING: Dockering PostgresSQL Database in Production is NOT Recommended :warning:
+### :warning: WARNING: Dockering PostgresSQL Database in Production is NOT Recommended :warning:
 
 :no_entry: Docker containers are primarily designed for lightweight applications and development environments, and they may not be optimized for high-throughput and robust database operations. I strongly recommend using a dedicated server or cloud-based infrastructure for hosting your PostgresSQL database in a production environment
 
