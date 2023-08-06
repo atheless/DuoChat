@@ -4,7 +4,7 @@
 
 Chatting app using Django Channels and WebSockets with encryption support via SSL.
 
-### Installation (staging/testing)
+### Installation (staging/testing) :whale:
 Change .env.staging, .env.staging.db, .env.staging.proxy-companion according to your needs.
 
 
@@ -14,7 +14,7 @@ Change .env.staging, .env.staging.db, .env.staging.proxy-companion according to 
     sudo docker-compose -f docker-compose.prod.yml exec web python manage.py migrate
     sudo docker-compose -f docker-compose.prod.yml exec web python manage.py collectstatic --no-input --clear
     docker compose up -f docker-compose.staging.yml down -v
-### Installation (production)
+### Installation (production) :whale:
 Change .env.prod, .env.prod.db, .env.prod.proxy-companion according to your needs.
 
 N.B: VIRTUAL_HOST,LETSENCRYPT_HOST should match your domain name not an IP address.
