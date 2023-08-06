@@ -15,11 +15,11 @@ Change .env.staging, .env.staging.db, .env.staging.proxy-companion according to 
     sudo docker-compose -f docker-compose.prod.yml exec web python manage.py collectstatic --no-input --clear
     docker compose up -f docker-compose.staging.yml down -v
 ### Installation (production) :whale:
-Change .env.prod, .env.prod.db, .env.prod.proxy-companion according to your needs.
+:point_right: Change .env.prod, .env.prod.db, .env.prod.proxy-companion according to your needs.
 
-N.B: VIRTUAL_HOST,LETSENCRYPT_HOST should match your domain name not an IP address.
+:point_right: N.B: VIRTUAL_HOST,LETSENCRYPT_HOST should match your domain name not an IP address.
 
-For SECRET_KEY use:
+:point_right: For SECRET_KEY use:
 from django.core.management.utils import get_random_secret_key get_random_secret_key()
 
     
@@ -28,7 +28,7 @@ from django.core.management.utils import get_random_secret_key get_random_secret
     docker compose up -f docker-compose.prod.yml up -d --build
     sudo docker-compose -f docker-compose.prod.yml exec web python manage.py migrate
     sudo docker-compose -f docker-compose.prod.yml exec web python manage.py collectstatic --no-input --clear
-Check for generated cerficates:
+:eyes: Check for generated cerficates:
 
     docker compose -f docker-compose.prod.yml exec nginx-proxy ls /etc/nginx/cert/
 Shutdown: 
