@@ -28,7 +28,7 @@ from django.core.management.utils import get_random_secret_key get_random_secret
     docker compose up -f docker-compose.prod.yml up -d --build
     sudo docker-compose -f docker-compose.prod.yml exec web python manage.py migrate
     sudo docker-compose -f docker-compose.prod.yml exec web python manage.py collectstatic --no-input --clear
-:eyes: Check for generated cerficates:
+:eyes: Check for generated certificates:
 
     docker compose -f docker-compose.prod.yml exec nginx-proxy ls /etc/nginx/cert/
 Shutdown: 
