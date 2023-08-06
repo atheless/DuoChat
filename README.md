@@ -32,8 +32,8 @@ Shutdown:
 
 
 ### Video
+https://github.com/atheless/DuoChat/assets/86173165/0ac8e141-7956-433b-a7f5-a806439dcc2f
 
-https://user-images.githubusercontent.com/86173165/235378137-8fd4387f-ae27-499b-827a-3210bb5185a6.mp4
 
 
 ### List of implemented features:
@@ -57,6 +57,5 @@ https://user-images.githubusercontent.com/86173165/235378137-8fd4387f-ae27-499b-
 - Read receipts for messages (two blue ticks)
 - Enhanced authentication (Multi-factor authentication)
 - Support for group and private chats
-- Explore new technologies for real-time web applications
-- Optimize performance and resource efficiency (better caching methods)
+- Better caching methods for online status
 ...
