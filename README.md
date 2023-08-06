@@ -37,7 +37,7 @@ Shutdown:
 
 
 
-### Video (old)
+### Old Video without SSL
 https://github.com/atheless/DuoChat/assets/86173165/0ac8e141-7956-433b-a7f5-a806439dcc2f
 
 
