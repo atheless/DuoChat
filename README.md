@@ -2,7 +2,7 @@
 
 # DuoChat
 
-Chatting app using Django Channels and WebSockets.
+Chatting app using Django Channels and WebSockets with encryption support via SSL.
 
 ### Installation (staging/testing)
 Change .env.staging, .env.staging.db, .env.staging.proxy-companion according to you needs.
