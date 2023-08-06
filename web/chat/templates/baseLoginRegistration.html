@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+    <meta charset="UTF-8">
+     <title>{% block title %} {% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'bootstrap-5.3.0-alpha2-dist/css/bootstrap.css' %}">
+    <script src="{% static 'bootstrap-5.3.0-alpha2-dist/js/bootstrap.js' %}"></script>
+
+    <script src="{% static 'Online.js' %}"></script>
+    {% block css %}
+            <link rel="stylesheet" href="{% static 'css/bg.css' %}">
+    {% endblock %}
+
+    {% block head %}
+    {% endblock %}
+
+</head>
+
+
+<body>
+{% block body %}
+
+
+{% endblock %}
+
+
+
+</body>
+
+
+{% block javascript %}
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

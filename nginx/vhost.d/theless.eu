@@ -1,0 +1,25 @@
+location /static/ {
+  alias /home/app/web/staticfiles/;
+  add_header Access-Control-Allow-Origin *;
+}
+
+location /media/ {
+  alias /home/app/web/mediafiles/;
+  add_header Access-Control-Allow-Origin *;
+}
+
+add_header X-debug-message "Super secret Meow AW AW" always;
+
+
+location /meow {
+    add_header Content-Type text/plain;
+    return 200 "Meow: request_uri: $request_uri";
+}
+
+location /google {
+  rewrite ^/google$ https://www.google.com/search?q=meow redirect;
+}
+
+ location /secret {
+      return  200 "This is secret location....";
+}
