@@ -43,7 +43,8 @@ https://github.com/atheless/DuoChat/assets/86173165/0ac8e141-7956-433b-a7f5-a806
 
 
 ### List of implemented features:
-- All WebSocket messages are secured via SSL and automatically encrypted  (wss://)
+- All WebSocket messages are secured via SSL and automatically encrypted (wss://).
+- Daphne asynchronous server is used for HTTP, HTTP2 and WebSocket. 
 - User Registration/Authentication: To access the application, users must register and authenticate by providing their credentials.
 - User Search: Users can search for other users of the application and invite them to start a conversation.
 - Recent Contacts List: The application keeps track of users with whom recent conversations have taken place, making it easier to initiate new conversations.
@@ -58,7 +59,7 @@ https://github.com/atheless/DuoChat/assets/86173165/0ac8e141-7956-433b-a7f5-a806
 - DOMPurify: The application protects users from XSS-stored and reflected attacks by sanitizing sent/received messages.
 
 
-### Future Developments:
+### Future Developments :thought_balloon::
 - Improve UI/UX
 - Read receipts for messages (two blue ticks)
 - Enhanced authentication (Multi-factor authentication)
